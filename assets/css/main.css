@@ -1790,7 +1790,7 @@ input, select, textarea {
 	}
 
 		header.major h2 + p {
-			color: #777;
+			color: #D1E8E2;
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -2061,7 +2061,7 @@ input, select, textarea {
 			-ms-object-fit: cover;
 			object-fit: cover;
 			display: block;
-			position: absolute;
+			position: relative;
 			top: 0;
 			left: 0;
 			width: 100%;
@@ -2818,7 +2818,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #fff;
+		background: #116466;
 		padding-right: 23em;
 	}
 
@@ -2839,7 +2839,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: #2C3531;
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
@@ -3313,4 +3313,25 @@ input, select, textarea {
 				padding: 0;
 			}
 
+	}
+
+	/* JACPro Custom CSS Changes */
+	#about-text {
+		width: 50%;
+	}
+
+	#about-img {
+		width: 50%;
+
+	}
+
+	@media screen and (max-width: 736px) {
+		#about-text {
+			width: 100%
+		}
+
+		#about-img {
+			width: 100%;
+			padding-bottom: 20px;
+		}
 	}
