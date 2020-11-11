@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("lightbox.css");
 
 /*
 	Read Only by HTML5 UP
@@ -98,7 +99,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fff; /* COLSCHEM BODY TEXT */
+		color: #8a7594; /* COLSCHEM BODY TEXT */
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -117,7 +118,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important; /* COLSCHEM HYPERLINK HOVER */
+			color: #ad66c4 !important; /* COLSCHEM HYPERLINK HOVER */
 		}
 
 	strong, b {
@@ -134,7 +135,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff; /* COLSCHEM SECTION HEADING */
+		color: #8b6e99; /* COLSCHEM SECTION HEADING */
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1785,12 +1786,12 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #FFFFFF; /* COLSCHEM TITLE */
+		color: #8b6e99; /* COLSCHEM TITLE */
 		font-size: 3.5em;
 	}
 
 		header.major h2 + p {
-			color: #fff; /* COLSCHEM SUBTITLE */
+			color: #8a7594; /* COLSCHEM SUBTITLE */
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -1826,8 +1827,8 @@ input, select, textarea {
 		appearance: none;
 		border-radius: 5px;
 		border: none;
-		border: solid 2px #e4e4e4; /* COLSCHEM CONTACT FORM OUTLINE */
-		background-color: #fff; /* COLSCHEM CONTACT FORM BG */
+		border: solid 2px #dbd1e0; /* COLSCHEM CONTACT FORM OUTLINE */
+		background-color: #f3ebf7; /* COLSCHEM CONTACT FORM BG */
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -1849,7 +1850,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: #8b6e99;
 		}
 
 	select {
@@ -2403,7 +2404,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: linear-gradient(to bottom right, #5AB9EA, #8860D0); /* COLSCHEM SKILLS ICONS */
+				background: #8b6e99; /* COLSCHEM SKILLS ICONS */
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2519,7 +2520,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #989898; /* COLSCHEM RESET BUTTON BG */
+		background-color: #af9eb8; /* COLSCHEM RESET BUTTON BG */
 		border-radius: 5px;
 		border: 0;
 		color: #ffffff !important; /* COLSCHEM RESET BUTTON TEXT */
@@ -2538,15 +2539,15 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #a5a5a5; /* COLSCHEM RESET BUTTON BG HOVER */
-			color: #ffffff !important;
+			background-color: #c4b4cc; /* COLSCHEM RESET BUTTON BG HOVER */
+			color: #fff !important;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: #8b8b8b;
+			background-color: #af9eb8;
 		}
 
 		input[type="submit"].icon,
@@ -2619,22 +2620,23 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8; /* COLSCHEM SEND MESSAGE BUTTON BG */
-			color: #ffffff !important; /* COLSCHEM SEND MESSAGE BUTTON TEXT */
+			background-color: #8b6e99; /* COLSCHEM SEND MESSAGE BUTTON BG */
+			color: #fff !important; /* COLSCHEM SEND MESSAGE BUTTON TEXT */
 		}
 
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #ff9999; /* COLSCHEM SEND MESSAGE BUTTON BG HOVER */
+				background-color: #bfa1cf; /* COLSCHEM SEND MESSAGE BUTTON BG HOVER */
+				color: #fff !important;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #39c29d;
+				background-color: #8b6e99;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2654,7 +2656,7 @@ input, select, textarea {
 /* Features */
 
 	.features article {
-		border-top: solid 3px #fff; /* COLSCHEM PROJECTS SEPARATORS */
+		border-top: solid 3px #dbd1e0; /* COLSCHEM PROJECTS SEPARATORS */
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
@@ -2701,7 +2703,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: linear-gradient(to bottom right, #5AB9EA, #8860D0); /* COLSCHEM SIDEBAR BG */
+		background: #8b6e99; /* COLSCHEM SIDEBAR BG */
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2717,7 +2719,7 @@ input, select, textarea {
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #ffffff; /* COLSCHEM SIDEBAR TITLE */
+				color: #d5cadb; /* COLSCHEM SIDEBAR TITLE */
 			}
 
 		#header header p {
@@ -2752,7 +2754,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9; /* COLSCHEM SIDEBAR SUBTITLE */
+				color: #d5cadb; /* COLSCHEM SIDEBAR SUBTITLE */
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2773,7 +2775,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc; /* COLSCHEM SIDEBAR SOCIAL ICONS */
+					color: #d5cadb; /* COLSCHEM SIDEBAR SOCIAL ICONS */
 				}
 
 		#header > nav {
@@ -2790,7 +2792,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1; /* COLSCHEM SIDEBAR SECTION SEPARATORS */
+					border-top: solid 2px #9579a3; /* COLSCHEM SIDEBAR SECTION SEPARATORS */
 					display: block;
 					padding: 0;
 				}
@@ -2801,15 +2803,15 @@ input, select, textarea {
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #ffffff !important; /* COLSCHEM SIDEBAR INACTIVE SECTION TEXT */
+						color: #d5cadb !important; /* COLSCHEM SIDEBAR INACTIVE SECTION TEXT */
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #fff; /* COLSCHEM SIDERBAR ACTIVE SECTION BG */
-							color: #8860D0 !important; /* COLSCHEM SIDEBAR ACTIVE SECTION TEXT */
+							background: #d5cadb; /* COLSCHEM SIDERBAR ACTIVE SECTION BG */
+							color: #8b6e99 !important; /* COLSCHEM SIDEBAR ACTIVE SECTION TEXT */
 						}
 
 					#header > nav ul li:first-child {
@@ -2819,14 +2821,14 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #84CEEB; /* COLSCHEM BODY */
+		background: #e5d8eb; /* COLSCHEM BODY */
 		padding-right: 23em;
 	}
 
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #fff; /* COLSCHEM SECTION SEPARATORS */
+		border-top: solid 6px #d5cadb; /* COLSCHEM SECTION SEPARATORS */
 	}
 
 		#main > section > .container {
@@ -2840,9 +2842,9 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: linear-gradient(to top, #5680E9, #5AB9EA); /* COLSCHEM FOOTER */
+		background: #665070; /* COLSCHEM FOOTER */
 		border-top: 0;
-		color: #fff; /* COLSCHEM COPYRIGHT TEXT */
+		color: #d5cadb; /* COLSCHEM COPYRIGHT TEXT */
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
@@ -3031,13 +3033,13 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: linear-gradient(to right, #5680E9 10%, #5AB9EA 90%); /* COLSCHEM HEADER BAR BG */
+				background: #665070; /* COLSCHEM HEADER BAR BG */
 				color: #fff;
 				min-width: 320px;
 			}
 
 				#titleBar .title {
-					color: #fff; /* COLSCHEM HEADER BAR TEXT */
+					color: #d5cadb; /* COLSCHEM HEADER BAR TEXT */
 					display: block;
 					font-weight: 700;
 					height: 44px;
@@ -3077,8 +3079,8 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						/*background: #5AB9EA; /* COLSCHEM HAMBURGER ICON BG */
-						color: #fff;
+						background: #8b6e99; /* COLSCHEM HAMBURGER ICON BG */
+						color: #d5cadb;
 						content: '\f0c9';
 						display: block;
 						font-size: 22px;
