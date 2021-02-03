@@ -118,12 +118,16 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ad66c4 !important; /* COLSCHEM HYPERLINK HOVER */
+			color: #bf93d4 !important; /* COLSCHEM HYPERLINK HOVER */
 		}
 
 	strong, b {
-		color: #777;
+		color: #7f5594;
 		font-weight: 700;
+	}
+
+	strong, b:hover {
+		color: #bf93d4;;
 	}
 
 	em, i {
@@ -2520,7 +2524,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #c4a1d8; /* COLSCHEM RESET BUTTON BG */
+		background-color: #cfbadb; /* COLSCHEM RESET BUTTON BG */
 		border-radius: 5px;
 		border: 0;
 		color: #ffffff !important; /* COLSCHEM RESET BUTTON TEXT */
@@ -2539,7 +2543,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #d7bce6; /* COLSCHEM RESET BUTTON BG HOVER */
+			background-color: #dec9eb; /* COLSCHEM RESET BUTTON BG HOVER */
 			color: #fff !important;
 		}
 
@@ -2751,6 +2755,7 @@ input, select, textarea {
 			#header > header h1 {
 				font-size: 1.75em;
 				margin: 0;
+				padding-bottom: -20px;
 			}
 
 			#header > header p {
@@ -2805,7 +2810,7 @@ input, select, textarea {
 						border: 0;
 						color: #e7dbee !important; /* COLSCHEM SIDEBAR INACTIVE SECTION TEXT */
 						display: block;
-						padding: 0.85em 0;
+						padding: 0.7em 0;
 						text-decoration: none;
 					}
 
@@ -2890,7 +2895,7 @@ input, select, textarea {
 			}
 
 				#header > header {
-					padding: 2em;
+					padding: 1em;
 				}
 
 				#header > footer {
