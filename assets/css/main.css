@@ -62,7 +62,6 @@ mark {
 }
 
 input::-moz-focus-inner {
-	border: 0;
 	padding: 0;
 }
 
@@ -72,6 +71,36 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
+/* Custom - JACPro */
+	.about-text {
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+
+	.about-image img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#about-collage img {
+		width: 800px;
+	}
+
+	#about-gamedev {
+	}
+
+	#about-gamedev img {
+
+	}
+
+	#about-guitar img {
+		width: 600px;
+	}
 
 /* Basic */
 
@@ -137,6 +166,7 @@ input, select, textarea {
 		margin: 0 0 2.25em 0;
 	}
 
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #7f5594; /* COLSCHEM SECTION HEADING */
 		font-weight: 700;
@@ -189,7 +219,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px #f4f4f4;
+		border-top: solid 3px #d7bce6;
 		margin: 2.25em 0;
 	}
 
@@ -474,17 +504,19 @@ input, select, textarea {
 			margin-left: -4em;
 		}
 
-			.row.gtr-200 > * {
-				padding: 0 0 0 4em;
-			}
+		.row.gtr-200 > * {
+			padding: 0 0 0 4em;
+		}
 
-			.row.gtr-200.gtr-uniform {
-				margin-top: -4em;
-			}
+		.row.gtr-200.gtr-uniform {
+			margin-top: -4em;
+		}
 
-				.row.gtr-200.gtr-uniform > * {
-					padding-top: 4em;
-				}
+		.row.gtr-200.gtr-uniform > * {
+			padding-top: 4em;
+		}
+		
+		
 
 		@media screen and (max-width: 1680px) {
 
@@ -732,6 +764,32 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+			/* Custom - JACPro */
+			.about-text {
+				margin-top: 0px;
+				margin-bottom: 15px;
+			}
+
+			.about-image img {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			#about-collage img {
+				width: 600px;
+			}
+
+			#about-gamedev img {
+				width: 400px;
+			}
+
+			#about-guitar img {
+				width: 500px;
+			}
 
 			.row {
 				display: flex;
@@ -1222,6 +1280,32 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			/* Custom - JACPro */
+			.about-text {
+				margin-top: 0px;
+				margin-bottom: 15px;
+			}
+
+			.about-image img {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			#about-collage img {
+				width: 400px;
+			}
+
+			#about-gamedev img {
+				width: 400px;
+			}
+
+			#about-guitar img {
+				width: 400px;
+			}
 
 			.row {
 				display: flex;
@@ -1467,6 +1551,33 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+
+			/* Custom - JACPro */
+			.about-text {
+				margin-top: 0px;
+				margin-bottom: 15px;
+			}
+
+			.about-image img {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			#about-collage img {
+				width: 300px;
+			}
+
+			#about-gamedev img {
+				width: 300px;
+			}
+
+			#about-guitar img {
+				width: 300px;
+			}
 
 			.row {
 				display: flex;
