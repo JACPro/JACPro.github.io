@@ -115,6 +115,15 @@ input, select, textarea {
 		height: 562px;
 	}
 
+	figcaption
+	{
+		background-color: #d7bce6;
+		color: #7f5594;
+		font: italic smaller sans-serif;
+		padding: 3px;
+		text-align: center;
+	}
+
 
 /* Basic */
 
@@ -2383,7 +2392,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2.25em 0;
+		margin: 0 0 0em 0;
 		padding-left: 1em;
 	}
 
