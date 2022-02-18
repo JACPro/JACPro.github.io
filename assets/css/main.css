@@ -8,6 +8,33 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root
+{
+	--sectionseparatorscolour: rgba(168, 71, 71, 0.801); /*#d7bce6*/
+	--maintextcolour: #a8a8a8; /*#7f5594*/	
+	--sidebartextcolour: #949494; /*#e7dbee*/
+	--backgroundcolour: #2b2b2b;
+	--sidebarbackgroundcolour: #222222;
+	--skillsicons: rgba(168, 71, 71, 0.801);
+	--resetbuttoncolour: #e2a8a8;
+	--resetbuttonhovercolour: rgba(182, 73, 73, 0.801);
+	--sendbuttoncolour: #9de0b1;
+	--sendbuttonhovercolour: #42a35f;
+	--sidebartitlecolour: #e6cbcb;
+	--titlecolour: rgba(168, 71, 71, 0.801);
+	--captiontextcolour: #e6cbcb;
+	--captionbackgroundcolour: #b4727291;
+}
+
+#logo
+{
+	padding-top: 20px;
+	border-top: solid 3px var(--sectionseparatorscolour);
+	padding-bottom: 20px;
+	border-bottom: solid 3px var(--sectionseparatorscolour);
+}
+
+
 html, body, div, span, applet, object,
  h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -117,11 +144,11 @@ input, select, textarea {
 
 	figcaption
 	{
-		background-color: #d7bce6;
-		color: #7f5594;
+		background-color: var(--captionbackgroundcolour);
 		font: italic smaller sans-serif;
 		padding: 3px;
 		text-align: center;
+		color:var(--captiontextcolour);
 	}
 
 
@@ -151,7 +178,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #7f5594; /* COLSCHEM BODY TEXT */
+		color: var(--maintextcolour); /* COLSCHEM BODY TEXT */
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -169,16 +196,16 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #bf93d4 !important; /* COLSCHEM HYPERLINK HOVER */
+			color: var(--sidebartitlecolour) !important; /* COLSCHEM HYPERLINK HOVER */
 		}
 
 	strong, b {
-		color: #7f5594;
+		color: var(--sectionseparatorscolour);
 		font-weight: 700;
 	}
 
 	strong, b:hover {
-		color: #bf93d4;;
+		color: var(--sidebartitlecolour);
 	}
 
 	em, i {
@@ -189,17 +216,30 @@ input, select, textarea {
 		margin: 0 0 2.25em 0;
 	}
 
+	h4
+	{
+		padding-left: 10px;
+		
+	}
+	h2
+	{
+		padding-left: -50px;
+		text-align: center;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #7f5594; /* COLSCHEM SECTION HEADING */
+		color: var(--maintextcolour); /* COLSCHEM SECTION HEADING */
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h3 a, h4 a, h5 a, h6 a {
 			border: 0;
-			color: inherit;
+			color: var(--titlecolour);
+			border-radius: 10%;
+			border: solid 3px var(--sectionseparatorscolour) !important;
+			padding: 0.2em;
 			text-decoration: none;
 		}
 
@@ -242,12 +282,13 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-top: solid 3px #d7bce6;
+		border-top: solid 3px var(--sectionseparatorscolour);
 		margin: 2.25em 0;
 	}
 
 		hr.major {
 			margin: 3.375em 0;
+			
 		}
 
 	blockquote {
@@ -1954,15 +1995,19 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #7f5594; /* COLSCHEM TITLE */
+		color: var(--titlecolour); /* COLSCHEM TITLE */
 		font-size: 3.5em;
+		font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+		text-align: center;
 	}
 
 		header.major h2 + p {
-			color: #7f5594; /* COLSCHEM SUBTITLE */
+			color: var(--titlecolour); /* COLSCHEM SUBTITLE */
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.1em;
+			padding-bottom: 15px;
+			text-align: center;
 		}
 
 /* Form */
@@ -1995,8 +2040,8 @@ input, select, textarea {
 		appearance: none;
 		border-radius: 5px;
 		border: none;
-		border: solid 2px #c4a1d8; /* COLSCHEM CONTACT FORM OUTLINE */
-		background-color: #f3ebf7; /* COLSCHEM CONTACT FORM BG */
+		border: solid 2px var(--skillsicons); /* COLSCHEM CONTACT FORM OUTLINE */
+		background-color: var(--backgroundcolour); /* COLSCHEM CONTACT FORM BG */
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2018,7 +2063,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #7f5594;
+			border-color: var(--maintextcolour);
 		}
 
 	select {
@@ -2135,25 +2180,25 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: #c4a1d8 !important;
+		color: var(--sectionseparatorscolour) !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #c4a1d8 !important;
+		color: var(--sectionseparatorscolour) !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #c4a1d8 !important;
+		color: var(--sectionseparatorscolour) !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #c4a1d8 !important;
+		color: var(--sectionseparatorscolour) !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
@@ -2359,12 +2404,12 @@ input, select, textarea {
 
 		.image.avatar {
 			border-radius: 10%;
-			overflow: hidden;
+			overflow:visible;
 		}
 
 			.image.avatar img {
 				border-radius: 10%;
-				display: block;
+				display:block;
 				width: 100%;
 			}
 
@@ -2376,6 +2421,11 @@ input, select, textarea {
 
 			.image.main img {
 				border-radius: 0;
+				border-bottom: solid 5px var(--skillsicons);
+				padding-top:10px;
+				padding-bottom:10px;
+				background-color: var(--sidebarbackgroundcolour);
+				border-top: solid 5px var(--skillsicons);
 			}
 
 /* List */
@@ -2572,7 +2622,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #7f5594; /* COLSCHEM SKILLS ICONS */
+				background: var(--skillsicons); /* COLSCHEM SKILLS ICONS */
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2688,7 +2738,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #cfbadb; /* COLSCHEM RESET BUTTON BG */
+		background-color: var(--resetbuttoncolour); /* COLSCHEM RESET BUTTON BG */
 		border-radius: 5px;
 		border: 0;
 		color: #ffffff !important; /* COLSCHEM RESET BUTTON TEXT */
@@ -2707,7 +2757,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #dec9eb; /* COLSCHEM RESET BUTTON BG HOVER */
+			background-color: var(--resetbuttonhovercolour); /* COLSCHEM RESET BUTTON BG HOVER */
 			color: #fff !important;
 		}
 
@@ -2788,7 +2838,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #7f5594; /* COLSCHEM SEND MESSAGE BUTTON BG */
+			background-color: var(--sendbuttoncolour); /* COLSCHEM SEND MESSAGE BUTTON BG */
 			color: #fff !important; /* COLSCHEM SEND MESSAGE BUTTON TEXT */
 		}
 
@@ -2796,7 +2846,7 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #c29dd6; /* COLSCHEM SEND MESSAGE BUTTON BG HOVER */
+				background-color: var(--sendbuttonhovercolour); /* COLSCHEM SEND MESSAGE BUTTON BG HOVER */
 				color: #fff !important;
 			}
 
@@ -2804,7 +2854,7 @@ input, select, textarea {
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #7f5594;
+				background-color: var(--maintextcolour);
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2824,7 +2874,7 @@ input, select, textarea {
 /* Features */
 
 	.features article {
-		border-top: solid 3px #d7bce6; /* COLSCHEM PROJECTS SEPARATORS */
+		border-top: solid 3px var(--sectionseparatorscolour); /* COLSCHEM PROJECTS SEPARATORS */
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
 	}
@@ -2871,7 +2921,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #7f5594; /* COLSCHEM SIDEBAR BG */
+		background: var(--sidebarbackgroundcolour); /* COLSCHEM SIDEBAR BG */
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2887,7 +2937,7 @@ input, select, textarea {
 		}
 
 			#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-				color: #f1e7f7; /* COLSCHEM SIDEBAR TITLE */
+				color: var(--sidebartitlecolour); /* COLSCHEM SIDEBAR TITLE */
 			}
 
 		#header header p {
@@ -2913,7 +2963,7 @@ input, select, textarea {
 			#header > header .avatar {
 				display: block;
 				margin: 0 auto 2.25em auto;
-				width: 8em;
+				width: 16em;
 			}
 
 			#header > header h1 {
@@ -2923,7 +2973,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #e7dbee; /* COLSCHEM SIDEBAR SUBTITLE */
+				color: var(--sidebartitlecolour); /* COLSCHEM SIDEBAR SUBTITLE */
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2944,7 +2994,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #e7dbee; /* COLSCHEM SIDEBAR SOCIAL ICONS */
+					color: var(--titlecolour); /* COLSCHEM SIDEBAR SOCIAL ICONS */
 				}
 
 		#header > nav {
@@ -2961,7 +3011,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #e7dbee; /* COLSCHEM SIDEBAR SECTION SEPARATORS */
+					border-top: solid 2px var(--sidebartitlecolour); /* COLSCHEM SIDEBAR SECTION SEPARATORS */
 					display: block;
 					padding: 0;
 				}
@@ -2972,15 +3022,15 @@ input, select, textarea {
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #e7dbee !important; /* COLSCHEM SIDEBAR INACTIVE SECTION TEXT */
+						color: var(--sidebartitlecolour) !important; /* COLSCHEM SIDEBAR INACTIVE SECTION TEXT */
 						display: block;
 						padding: 0.7em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
-							background: #e7dbee; /* COLSCHEM SIDERBAR ACTIVE SECTION BG */
-							color: #7f5594 !important; /* COLSCHEM SIDEBAR ACTIVE SECTION TEXT */
+							background: var(--sectionseparatorscolour); /* COLSCHEM SIDERBAR ACTIVE SECTION BG */
+							color: #fff !important; /* COLSCHEM SIDEBAR ACTIVE SECTION TEXT */
 						}
 
 					#header > nav ul li:first-child {
@@ -2990,14 +3040,14 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #e7dbee; /* COLSCHEM BODY */
+		background: var(--backgroundcolour); /* COLSCHEM BODY */
 		padding-right: 23em;
 	}
 
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #d7bce6; /* COLSCHEM SECTION SEPARATORS */
+		border-top: solid 6px var(--sectionseparatorscolour); /* COLSCHEM SECTION SEPARATORS */
 	}
 
 		#main > section > .container {
@@ -3013,7 +3063,7 @@ input, select, textarea {
 	#footer {
 		background: #353535; /* COLSCHEM FOOTER */
 		border-top: 0;
-		color: #e7dbee; /* COLSCHEM COPYRIGHT TEXT */
+		color: var(--sidebartextcolour); /* COLSCHEM COPYRIGHT TEXT */
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
@@ -3025,7 +3075,7 @@ input, select, textarea {
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px #d4d4d4;
+				border-left: solid 1px var(--sectionseparatorscolour);
 				display: inline-block;
 				font-size: 0.8em;
 				margin-left: 1em;
@@ -3134,6 +3184,7 @@ input, select, textarea {
 
 			.image.main {
 				height: 20em;
+				 
 			}
 
 		/* Header */
@@ -3202,13 +3253,13 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #353535; /* COLSCHEM HEADER BAR BG */
+				background: var(--backgroundcolour); /* COLSCHEM HEADER BAR BG */
 				color: #fff;
 				min-width: 320px;
 			}
 
 				#titleBar .title {
-					color: #e7dbee; /* COLSCHEM HEADER BAR TEXT */
+					color: var(--titlecolour); /* COLSCHEM HEADER BAR TEXT */
 					display: block;
 					font-weight: 700;
 					height: 44px;
@@ -3248,8 +3299,8 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #7f5594; /* COLSCHEM HAMBURGER ICON BG */
-						color: #e7dbee;
+						background: var(--sectionseparatorscolour); /* COLSCHEM HAMBURGER ICON BG */
+						color: var(--captiontextcolour);
 						content: '\f0c9';
 						display: block;
 						font-size: 22px;
@@ -3316,6 +3367,7 @@ input, select, textarea {
 
 			.image.main {
 				height: 12em;
+				border-top: solid 3px var(--sectionseparatorscolour); 
 			}
 
 		/* Section/Article */
@@ -3326,10 +3378,12 @@ input, select, textarea {
 
 			header.major h2 {
 				font-size: 2.5em;
+				
 			}
 
 				header.major h2 + p {
 					font-size: 1.5em;
+					
 				}
 
 		/* Features */
@@ -3363,7 +3417,7 @@ input, select, textarea {
 
 					#header > header .avatar {
 						margin: 0 auto 1.6875em auto;
-						width: 6em;
+						width: 12em;
 					}
 
 					#header > header h1 {
